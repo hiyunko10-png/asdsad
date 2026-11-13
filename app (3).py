@@ -102,12 +102,22 @@ def due_state(task, today):
 
 
 st.markdown("""<style>
-.stApp {background-color: #f6f8fb;}
-.block-container {max-width: 1120px; padding-top: 2rem;}
-h1, h2, h3 {color: #19334b;}
-[data-testid="stMetric"] {background: white; border: 1px solid #dce5ef; border-radius: 16px; padding: 16px;}
-.stButton>button {border-radius: 10px; min-height: 44px;}
-</style>""", unsafe_allow_html=True)
+.block-container {
+    max-width: 1120px;
+    padding-top: 2rem;
+}
+
+[data-testid="stMetric"] {
+    border: 1px solid rgba(128, 128, 128, 0.35);
+    border-radius: 16px;
+    padding: 16px;
+}
+
+.stButton > button {
+    border-radius: 10px;
+    min-height: 44px;
+}
+
 
 st.title("🏡 우리집 함께")
 st.caption("집안일은 나누고, 함께하는 시간은 늘려요.")
